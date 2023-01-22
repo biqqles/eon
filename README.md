@@ -23,5 +23,9 @@ cabal update && cabal install
 You can add `~/.cabal/bin` directory, noted in the output of the above command, to
 your PATH to be able to use eon anywhere.
 
-For example, you can now run `eon ruby`. This will print all the reverse dependencies
-of the `ruby` package; i.e. all nodes of the dependency tree in order, with the root — `ruby` — listed first.
+## Usage
+### `eon depends-on <packages>`
+Recursively collect the reverse dependencies (dependents) of the package(s) specified.
+
+For example, invoking `eon depends-on ruby` will print all the packages which depend on `ruby`,
+in order of closeness (i.e. with `ruby` listed first).
