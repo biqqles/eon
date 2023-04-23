@@ -12,7 +12,6 @@ maintainer:          biqqles@pm.me
 -- copyright:
 category:            Development
 build-type:          Simple
-extra-source-files:  CHANGELOG.md
 cabal-version:       >=1.10
 
 executable eon
